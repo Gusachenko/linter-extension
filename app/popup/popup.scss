@@ -1,0 +1,32 @@
+body{
+    background: white;
+
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+
+.main-container{
+    position: relative;
+    width: 300px;
+    height: 150px;
+}
+
+.description-list li{
+    margin: 10px 0px;
+}
+
+
+.btn-apply-settings{
+    position: relative;
+
+    width: 30%;
+    height: 15%;
+    min-height: 25px;
+    min-width: 50px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+}

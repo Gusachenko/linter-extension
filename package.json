@@ -1,0 +1,48 @@
+{
+  "name": "linter-extension",
+  "version": "1.0.0",
+  "description": "Linter extension for HTML by CSS capabilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "first-init": "gulp build-test && bower install",
+    "bower-vendor": "bower install",
+    "build": "gulp build-test",
+    "clean-dist": "gulp clean-dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gusachenko/linter-extension.git"
+  },
+  "keywords": [
+    "linter",
+    "extesion",
+    "css",
+    "html"
+  ],
+  "author": "GusachenkoGleb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gusachenko/linter-extension/issues"
+  },
+  "homepage": "https://github.com/Gusachenko/linter-extension#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-ignore": "^2.0.2",
+    "gulp-image-resize": "^0.10.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "jshint": "^2.9.2",
+    "run-sequence": "^1.2.2"
+  }
+}

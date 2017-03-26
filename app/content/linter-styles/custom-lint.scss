@@ -1,0 +1,14 @@
+.markedComponent--not-ready{
+-webkit-box-shadow: 0 0 0 5px red;
+        box-shadow: 0 0 0 5px red;
+}
+
+.markedComponent--in-work{
+    -webkit-box-shadow: 0 0 0 5px orange;
+        box-shadow: 0 0 0 5px orange;
+}
+
+.markedComponent--ready{
+-webkit-box-shadow: 0 0 0 5px lightgreen;
+        box-shadow: 0 0 0 5px lightgreen;
+}

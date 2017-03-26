@@ -1,0 +1,58 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Extension's Popup</title>
+    <link rel="stylesheet" href="../popup/popup.css">
+    <link rel="stylesheet" href="../content/linter-styles/custom-lint.css">
+  </head>
+  <body>
+    <div class="main-container" role="main">
+
+      <div class="ul-title">List of classes for <b>custom lint</b>:</div>
+      <ul class="description-list">
+        <li class="markedComponent--not-ready">
+          markedComponent--not-ready
+        </li>
+        <li class="markedComponent--in-work">
+          markedComponent--in-work
+        </li>
+        <li class="markedComponent--ready">
+          markedComponent--ready
+        </li>
+      </ul>
+      
+
+      <div class="ul-title">Select linter:</div>
+      <ul>
+        <li>
+          <label>custom lint
+            <input class="check-custom-lint" type="checkbox" name="custom-lint"/>
+          </label>
+        </li>
+        <li>
+          <label>advanced lint
+            <input class="check-advanced-lint" type="checkbox" name="advanced-lint"/>
+          </label>
+        </li>
+      </ul>
+      
+      <input class="btn-apply-settings" type="button" value="apply"/>
+
+    </div>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../popup/popup.js"></script>
+  </body>
+</html>
+

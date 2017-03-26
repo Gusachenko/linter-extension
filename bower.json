@@ -1,0 +1,27 @@
+{
+  "name": "linter-extension",
+  "description": "Linter extension for HTML by CSS capabilities.",
+  "main": "index.js",
+  "authors": [
+    "GusachenkoGleb"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "linter",
+    "extesion",
+    "css",
+    "html"
+  ],
+  "homepage": "https://github.com/Gusachenko/linter-extension",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

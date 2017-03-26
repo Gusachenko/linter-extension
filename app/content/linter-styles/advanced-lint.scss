@@ -1,0 +1,39 @@
+ a:not([href]),
+ a[href="#"],
+ a[href=""],
+ a[href*="javascript:void(0)"] {
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.5);
+          box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+ img:not([alt]),
+ img[alt=""] {
+  -webkit-box-shadow: 0 0 0 5px rgba(255, 165, 0, 0.5);
+          box-shadow: 0 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+ input:not([id]),
+ select:not([id]),
+ textarea:not([id]) {
+  -webkit-box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5);
+          box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5);
+}
+
+ label:not([for]) {
+  -webkit-box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5);
+          box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5);
+}
+
+ input:not([name]),
+ select:not([name]),
+ textarea:not([name]),
+ form:not([name]):not([id]) {
+  -webkit-box-shadow: 0 0 0 5px rgba(128, 0, 128, 0.5);
+          box-shadow: 0 0 0 5px rgba(128, 0, 128, 0.5);
+}
+
+ button:empty,
+ a:empty {
+  -webkit-box-shadow: 0 0 0 5px rgba(100, 149, 237, 0.5);
+          box-shadow: 0 0 0 5px rgba(100, 149, 237, 0.5);
+}
