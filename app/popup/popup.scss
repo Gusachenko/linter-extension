@@ -1,15 +1,19 @@
 body{
-    background: white;
+    // gradient from: https://webgradients.com/?ref=producthunt
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 
     font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
     font-size: 100%;
+
+    width: 300px;
+    height: 300px;
 }
 
 
 .main-container{
     position: relative;
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
 }
 
 .description-list li{

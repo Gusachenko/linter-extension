@@ -87,9 +87,17 @@ gulp.task('imagemin', () =>
 );
 
 
-//copy of unmodifided files
-gulp.task('copy', function() {
+//copy of manifest files
+gulp.task('copy-manifest', function() {
     gulp.src('./app/manifest.json')
+        .pipe(gulp.dest('./dist'))
+});
+
+//copy of unmodifided files
+gulp.task('copy-simple', function() {
+    gulp.src(['./app/manifest.json', 
+    './app/*/*.png', './app/*.png',
+    './app/*/*.js','./app/*/*/*.js'])
         .pipe(gulp.dest('./dist'))
 });
 
@@ -97,10 +105,17 @@ gulp.task('copy', function() {
 //
 gulp.task('build-test', function() {
   runSequence('sass',
+              'copy-simple');
+});
+
+
+//
+gulp.task('production', function() {
+  runSequence('sass',
               'minify-html',
               'stripDebug',
               'imagemin',
-              'copy');
+              'copy-manifest');
 });
 
 
